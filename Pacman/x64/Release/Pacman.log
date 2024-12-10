@@ -1,0 +1,18 @@
+﻿  Pacman.cpp
+Pacman.obj : error LNK2001: unresolved external symbol "public: static class sf::RenderStates const sf::RenderStates::Default" (?Default@RenderStates@sf@@2V12@B)
+Pacman.obj : error LNK2001: unresolved external symbol "public: __cdecl sf::CircleShape::CircleShape(float,unsigned __int64)" (??0CircleShape@sf@@QEAA@M_K@Z)
+Pacman.obj : error LNK2001: unresolved external symbol "public: virtual __cdecl sf::RenderWindow::~RenderWindow(void)" (??1RenderWindow@sf@@UEAA@XZ)
+Pacman.obj : error LNK2001: unresolved external symbol "public: __cdecl sf::RenderWindow::RenderWindow(class sf::VideoMode,class sf::String const &,unsigned int,struct sf::ContextSettings const &)" (??0RenderWindow@sf@@QEAA@VVideoMode@1@AEBVString@1@IAEBUContextSettings@1@@Z)
+Pacman.obj : error LNK2001: unresolved external symbol "public: __cdecl sf::Color::Color(unsigned char,unsigned char,unsigned char,unsigned char)" (??0Color@sf@@QEAA@EEEE@Z)
+Pacman.obj : error LNK2001: unresolved external symbol "public: void __cdecl sf::Window::display(void)" (?display@Window@sf@@QEAAXXZ)
+Pacman.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl sf::Window::close(void)" (?close@Window@sf@@UEAAXXZ)
+Pacman.obj : error LNK2001: unresolved external symbol "public: bool __cdecl sf::WindowBase::pollEvent(class sf::Event &)" (?pollEvent@WindowBase@sf@@QEAA_NAEAVEvent@2@@Z)
+Pacman.obj : error LNK2001: unresolved external symbol "public: bool __cdecl sf::WindowBase::isOpen(void)const " (?isOpen@WindowBase@sf@@QEBA_NXZ)
+Pacman.obj : error LNK2001: unresolved external symbol "public: static class sf::Color const sf::Color::Green" (?Green@Color@sf@@2V12@B)
+Pacman.obj : error LNK2001: unresolved external symbol "public: void __cdecl sf::RenderTarget::draw(class sf::Drawable const &,class sf::RenderStates const &)" (?draw@RenderTarget@sf@@QEAAXAEBVDrawable@2@AEBVRenderStates@2@@Z)
+Pacman.obj : error LNK2001: unresolved external symbol "public: void __cdecl sf::RenderTarget::clear(class sf::Color const &)" (?clear@RenderTarget@sf@@QEAAXAEBVColor@2@@Z)
+Pacman.obj : error LNK2001: unresolved external symbol "public: void __cdecl sf::Shape::setFillColor(class sf::Color const &)" (?setFillColor@Shape@sf@@QEAAXAEBVColor@2@@Z)
+Pacman.obj : error LNK2001: unresolved external symbol "public: virtual __cdecl sf::Shape::~Shape(void)" (??1Shape@sf@@UEAA@XZ)
+Pacman.obj : error LNK2001: unresolved external symbol "public: __cdecl sf::String::String(char const *,class std::locale const &)" (??0String@sf@@QEAA@PEBDAEBVlocale@std@@@Z)
+Pacman.obj : error LNK2001: unresolved external symbol "public: __cdecl sf::VideoMode::VideoMode(unsigned int,unsigned int,unsigned int)" (??0VideoMode@sf@@QEAA@III@Z)
+C:\Users\ekis_\Documents\GIT\Pacman\Pacman\x64\Release\Pacman.exe : fatal error LNK1120: 16 unresolved externals
