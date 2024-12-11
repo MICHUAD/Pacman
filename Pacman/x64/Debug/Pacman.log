@@ -1,2 +1,6 @@
 ﻿  Pacman.cpp
-  Pacman.vcxproj -> C:\Users\ekis_\Documents\GIT\Pacman\Pacman\x64\Debug\Pacman.exe
+  Player.cpp
+C:\Users\ekis_\Documents\GIT\Pacman\Pacman\include\Player.h(2,10): error C1083: Cannot open include file: 'GameFramework/CEntity.h': No such file or directory
+  (compiling source file 'Source/Player.cpp')
+  
+  Generating Code...

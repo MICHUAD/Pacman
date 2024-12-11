@@ -71,12 +71,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\ekis_\Documents\GIT\Pacman\SFML-2.6.2-64\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\ekis_\Documents\GIT\Pacman\SFML-2.6.2-64\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\ekis_\Documents\GIT\Pacman\Pacman\GameFramework\Include;C:\Users\ekis_\Documents\GIT\Pacman\SFML-2.6.2-64\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\ekis_\Documents\GIT\Pacman\Pacman\x64;C:\Users\ekis_\Documents\GIT\Pacman\SFML-2.6.2-64\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>C:\Users\ekis_\Documents\GIT\Pacman\SFML-2.6.2-64\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
-    <LibraryPath>C:\Users\ekis_\Documents\GIT\Pacman\SFML-2.6.2-64\lib;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+    <IncludePath>C:\Users\ekis_\Documents\GIT\Pacman\Pacman\GameFramework\Include;C:\Users\ekis_\Documents\GIT\Pacman\SFML-2.6.2-64\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>C:\Users\ekis_\Documents\GIT\Pacman\Pacman\x64;C:\Users\ekis_\Documents\GIT\Pacman\SFML-2.6.2-64\lib;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -143,6 +143,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Pacman.cpp" />
+    <ClCompile Include="Source\Ghost.cpp" />
+    <ClCompile Include="Source\PacmanScene.cpp" />
+    <ClCompile Include="Source\Player.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\Ghost.h" />
+    <ClInclude Include="include\PacManHeaderLib.h" />
+    <ClInclude Include="Include\PacmanScene.h" />
+    <ClInclude Include="Include\Player.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

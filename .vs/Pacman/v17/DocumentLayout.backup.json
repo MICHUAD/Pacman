@@ -3,8 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7AAB5B1A-9460-4661-8B97-0F58FCA3CB60}|Pacman.vcxproj|C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\Pacman.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7AAB5B1A-9460-4661-8B97-0F58FCA3CB60}|Pacman.vcxproj|solutionrelative:Pacman.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{497D4999-66C8-43AA-B39A-6E9BD9478D3F}|GameFramework\\GameFramework.vcxproj|C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Source\\TransformComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{497D4999-66C8-43AA-B39A-6E9BD9478D3F}|GameFramework\\GameFramework.vcxproj|solutionrelative:GameFramework\\Source\\TransformComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{497D4999-66C8-43AA-B39A-6E9BD9478D3F}|GameFramework\\GameFramework.vcxproj|C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Source\\State.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{497D4999-66C8-43AA-B39A-6E9BD9478D3F}|GameFramework\\GameFramework.vcxproj|solutionrelative:GameFramework\\Source\\State.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{497D4999-66C8-43AA-B39A-6E9BD9478D3F}|GameFramework\\GameFramework.vcxproj|C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Source\\Component.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{497D4999-66C8-43AA-B39A-6E9BD9478D3F}|GameFramework\\GameFramework.vcxproj|solutionrelative:GameFramework\\Source\\Component.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{497D4999-66C8-43AA-B39A-6E9BD9478D3F}|GameFramework\\GameFramework.vcxproj|C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Source\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{497D4999-66C8-43AA-B39A-6E9BD9478D3F}|GameFramework\\GameFramework.vcxproj|solutionrelative:GameFramework\\Source\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{497D4999-66C8-43AA-B39A-6E9BD9478D3F}|GameFramework\\GameFramework.vcxproj|C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Source\\GraphicsComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{497D4999-66C8-43AA-B39A-6E9BD9478D3F}|GameFramework\\GameFramework.vcxproj|solutionrelative:GameFramework\\Source\\GraphicsComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{497D4999-66C8-43AA-B39A-6E9BD9478D3F}|GameFramework\\GameFramework.vcxproj|C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Source\\Entity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{497D4999-66C8-43AA-B39A-6E9BD9478D3F}|GameFramework\\GameFramework.vcxproj|solutionrelative:GameFramework\\Source\\Entity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{497D4999-66C8-43AA-B39A-6E9BD9478D3F}|GameFramework\\GameFramework.vcxproj|C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Source\\GameManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{497D4999-66C8-43AA-B39A-6E9BD9478D3F}|GameFramework\\GameFramework.vcxproj|solutionrelative:GameFramework\\Source\\GameManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{497D4999-66C8-43AA-B39A-6E9BD9478D3F}|GameFramework\\GameFramework.vcxproj|C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Include\\State.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{497D4999-66C8-43AA-B39A-6E9BD9478D3F}|GameFramework\\GameFramework.vcxproj|solutionrelative:GameFramework\\Include\\State.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{497D4999-66C8-43AA-B39A-6E9BD9478D3F}|GameFramework\\GameFramework.vcxproj|C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Include\\TransformComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{497D4999-66C8-43AA-B39A-6E9BD9478D3F}|GameFramework\\GameFramework.vcxproj|solutionrelative:GameFramework\\Include\\TransformComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{497D4999-66C8-43AA-B39A-6E9BD9478D3F}|GameFramework\\GameFramework.vcxproj|C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Include\\GraphicsComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{497D4999-66C8-43AA-B39A-6E9BD9478D3F}|GameFramework\\GameFramework.vcxproj|solutionrelative:GameFramework\\Include\\GraphicsComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{497D4999-66C8-43AA-B39A-6E9BD9478D3F}|GameFramework\\GameFramework.vcxproj|C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Include\\HeaderLib.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{497D4999-66C8-43AA-B39A-6E9BD9478D3F}|GameFramework\\GameFramework.vcxproj|solutionrelative:GameFramework\\Include\\HeaderLib.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +54,149 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Pacman.cpp",
-              "DocumentMoniker": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\Pacman.cpp",
-              "RelativeDocumentMoniker": "Pacman.cpp",
-              "ToolTip": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\Pacman.cpp",
-              "RelativeToolTip": "Pacman.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Component.cpp",
+              "DocumentMoniker": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Source\\Component.cpp",
+              "RelativeDocumentMoniker": "GameFramework\\Source\\Component.cpp",
+              "ToolTip": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Source\\Component.cpp",
+              "RelativeToolTip": "GameFramework\\Source\\Component.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-10T02:59:03.047Z",
+              "WhenOpened": "2024-12-11T17:53:35.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GraphicsComponent.cpp",
+              "DocumentMoniker": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Source\\GraphicsComponent.cpp",
+              "RelativeDocumentMoniker": "GameFramework\\Source\\GraphicsComponent.cpp",
+              "ToolTip": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Source\\GraphicsComponent.cpp",
+              "RelativeToolTip": "GameFramework\\Source\\GraphicsComponent.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-11T17:53:21.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "State.h",
+              "DocumentMoniker": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Include\\State.h",
+              "RelativeDocumentMoniker": "GameFramework\\Include\\State.h",
+              "ToolTip": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Include\\State.h",
+              "RelativeToolTip": "GameFramework\\Include\\State.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-11T17:51:20.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TransformComponent.h",
+              "DocumentMoniker": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Include\\TransformComponent.h",
+              "RelativeDocumentMoniker": "GameFramework\\Include\\TransformComponent.h",
+              "ToolTip": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Include\\TransformComponent.h",
+              "RelativeToolTip": "GameFramework\\Include\\TransformComponent.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-11T17:51:05.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HeaderLib.h",
+              "DocumentMoniker": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Include\\HeaderLib.h",
+              "RelativeDocumentMoniker": "GameFramework\\Include\\HeaderLib.h",
+              "ToolTip": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Include\\HeaderLib.h",
+              "RelativeToolTip": "GameFramework\\Include\\HeaderLib.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-11T17:50:53.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GraphicsComponent.h",
+              "DocumentMoniker": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Include\\GraphicsComponent.h",
+              "RelativeDocumentMoniker": "GameFramework\\Include\\GraphicsComponent.h",
+              "ToolTip": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Include\\GraphicsComponent.h",
+              "RelativeToolTip": "GameFramework\\Include\\GraphicsComponent.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-11T17:49:17.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Entity.cpp",
+              "DocumentMoniker": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Source\\Entity.cpp",
+              "RelativeDocumentMoniker": "GameFramework\\Source\\Entity.cpp",
+              "ToolTip": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Source\\Entity.cpp",
+              "RelativeToolTip": "GameFramework\\Source\\Entity.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-10T23:41:36.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "State.cpp",
+              "DocumentMoniker": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Source\\State.cpp",
+              "RelativeDocumentMoniker": "GameFramework\\Source\\State.cpp",
+              "ToolTip": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Source\\State.cpp",
+              "RelativeToolTip": "GameFramework\\Source\\State.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-10T22:46:59.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TransformComponent.cpp",
+              "DocumentMoniker": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Source\\TransformComponent.cpp",
+              "RelativeDocumentMoniker": "GameFramework\\Source\\TransformComponent.cpp",
+              "ToolTip": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Source\\TransformComponent.cpp",
+              "RelativeToolTip": "GameFramework\\Source\\TransformComponent.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-10T22:44:26.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Scene.cpp",
+              "DocumentMoniker": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Source\\Scene.cpp",
+              "RelativeDocumentMoniker": "GameFramework\\Source\\Scene.cpp",
+              "ToolTip": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Source\\Scene.cpp",
+              "RelativeToolTip": "GameFramework\\Source\\Scene.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-10T22:35:12.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GameManager.cpp",
+              "DocumentMoniker": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Source\\GameManager.cpp",
+              "RelativeDocumentMoniker": "GameFramework\\Source\\GameManager.cpp",
+              "ToolTip": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\GameFramework\\Source\\GameManager.cpp",
+              "RelativeToolTip": "GameFramework\\Source\\GameManager.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-10T22:31:22.456Z",
               "EditorCaption": ""
             }
           ]
