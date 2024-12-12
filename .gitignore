@@ -1,32 +1,67 @@
-# Prerequisites
-*.d
+# Ignorar carpetas de compilación Debug y Release
+Debug/
+Release/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
+# Ignorar carpetas de compilación de otros entornos
+build/
+out/
+
+# Ignorar archivos de Visual Studio relacionados con compilación
 *.obj
-
-# Precompiled Headers
-*.gch
 *.pch
+*.idb
+*.pdb
+*.ilk
+*.tlog
+*.log
+*.lastbuildstate
+*.user
+*.suo
+*.ipch
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.vcxproj.user
+*.vcxproj.filters
 
-# Compiled Dynamic libraries
+# Ignorar archivos temporales y de respaldo
+*.tmp
+*.log
+*.bak
+*.swp
+*.swo
+*.~*
+
+# Ignorar ejecutables y bibliotecas generadas
+*.exe
+*.dll
+*.lib
 *.so
 *.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
 *.a
-*.lib
-
-# Executables
-*.exe
 *.out
-*.app
+
+# Ignorar archivos de configuración específicos de Visual Studio
+.vscode/
+.idea/
+*.code-workspace
+
+# Ignorar configuraciones de CMake o similares
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.make
+
+# Ignorar archivos de SFML generados en compilación
+bin/
+lib/
+
+# Ignorar directorios de Debug en subcarpetas (por si hay múltiples niveles)
+**/Debug/
+**/Release/
+
+# Ignorar cualquier archivo que no deba estar en control de versiones pero sea específico del entorno de desarrollo
+*.DS_Store
+Thumbs.db
