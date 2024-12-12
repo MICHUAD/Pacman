@@ -1,0 +1,1 @@
+C:\Users\ekis_\Documents\GIT\Pacman\Pacman\GameFramework\x64\Debug\libGameFramework.lib

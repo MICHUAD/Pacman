@@ -1,5 +1,6 @@
 #include "../Include/PacManHeaderLib.h"
 
+
 CGhost::CGhost()
 {
     m_fSpeed = 0.0f;

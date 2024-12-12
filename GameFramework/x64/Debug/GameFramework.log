@@ -3,7 +3,7 @@
   GraphicsComponent.cpp
   Scene.cpp
   Component.cpp
-  State.cpp
   TransformComponent.cpp
   Generating Code...
-  GameFramework.vcxproj -> C:\Users\ekis_\Documents\GIT\Pacman\Pacman\x64\Debug\libGameFramework.lib
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1556,5): warning MSB8012: TargetName(\libGameFramework) does not match the Library's OutputFile property value (libGameFramework). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  GameFramework.vcxproj -> C:\Users\ekis_\Documents\GIT\Pacman\Pacman\GameFramework\x64\Debug\libGameFramework.lib

@@ -53,9 +53,6 @@
     <ClCompile Include="Source\GraphicsComponent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source\State.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Source\GameManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

@@ -71,8 +71,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\ekis_\Documents\GIT\Pacman\Pacman\GameFramework\Include;C:\Users\ekis_\Documents\GIT\Pacman\SFML-2.6.2-64\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\ekis_\Documents\GIT\Pacman\Pacman\x64;C:\Users\ekis_\Documents\GIT\Pacman\SFML-2.6.2-64\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>C:\Users\ekis_\Documents\GIT\Pacman\Pacman\GameFramework\x64\Debug;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\ekis_\Documents\GIT\Pacman\SFML-2.6.2-64\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>C:\Users\ekis_\Documents\GIT\Pacman\Pacman\GameFramework\Include;C:\Users\ekis_\Documents\GIT\Pacman\SFML-2.6.2-64\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
@@ -111,15 +111,15 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>SFML_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\ekis_\Documents\GIT\Pacman\SFML-2.6.2-64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\ekis_\Documents\GIT\Pacman\SFML-2.6.2-64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\ekis_\Documents\GIT\Pacman\Pacman\GameFramework\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;winmm.lib
+;libGameFramework.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

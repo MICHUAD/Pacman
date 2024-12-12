@@ -1,8 +1,11 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include <list>
+#include <memory>
 
 namespace MichGF // Mich Game Framework, creating a namespace to avoid any library conflict
 {
+	class CComponent; //FFWD Decl
 	/*
 	*	Base class for all entities in the game, as Pac-man, Ghosts, and elements on the map, like the powr tokens or the cherries
 	*	contains the common attributes to all entities.
@@ -23,9 +26,13 @@ namespace MichGF // Mich Game Framework, creating a namespace to avoid any libra
 		//dtaw Draw help us to put the updated data into the screen, in this case the sprite as base.
 		void vDraw(sf::RenderWindow& rwWindow) { rwWindow.draw(m_sprSprite); }
 
+		//used to add components to an entity
+		void vAddComponent(std::shared_ptr<MichGF::CComponent> pComponent);
+
 		//Using protected level of security so the child can access directly to these attributes without the getter.
 	protected:
 		sf::Vector2i m_vPosition;
 		sf::Sprite m_sprSprite;
+		std::list<std::shared_ptr<MichGF::CComponent>> m_lComponents;
 	};
 }

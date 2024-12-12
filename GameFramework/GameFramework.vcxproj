@@ -71,9 +71,10 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <TargetName>lib$(ProjectName)</TargetName>
-    <IncludePath>C:\Users\ekis_\Documents\GIT\Pacman\Pacman\GameFramework\Include;$(IncludePath)</IncludePath>
+    <TargetName>\lib$(ProjectName)</TargetName>
+    <IncludePath>C:\Users\ekis_\Documents\GIT\Pacman\SFML-2.6.2-64\include;C:\Users\ekis_\Documents\GIT\Pacman\Pacman\GameFramework\Include;$(IncludePath)</IncludePath>
     <SourcePath>C:\Users\ekis_\Documents\GIT\Pacman\Pacman\GameFramework\Source;$(SourcePath)</SourcePath>
+    <OutDir>$(SolutionDir)\GameFramework\$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>C:\Users\ekis_\Documents\GIT\Pacman\Pacman\GameFramework\Include;$(IncludePath)</IncludePath>
@@ -175,7 +176,6 @@
     <ClCompile Include="Source\GraphicsComponent.cpp" />
     <ClCompile Include="Source\Scene.cpp" />
     <ClCompile Include="Source\Component.cpp" />
-    <ClCompile Include="Source\State.cpp" />
     <ClCompile Include="Source\TransformComponent.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

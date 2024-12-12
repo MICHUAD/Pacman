@@ -1,3 +1,5 @@
+#pragma once
+
 namespace MichGF
 {
     class CEntity; // forward declaration, used to anticipate the existance of the class (need to be sure is correctly implemented)

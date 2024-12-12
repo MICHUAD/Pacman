@@ -1,11 +1,12 @@
 #pragma once
-#include "PacManHeaderLib.h"
 
-class CPacmanScene : public MichGF::CScene
+#include "PacManHeaderLib.h"
+using namespace MichGF;
+
+class CPacmanScene : public CScene
 {
 public:
     CPacmanScene();
-
     void vLoadMap(const std::string& sFilename); // Método para cargar el mapa
 
 private:

@@ -1,5 +1,4 @@
 #pragma once
-#include "../include/HeaderLib.h"
 
 namespace MichGF
 {

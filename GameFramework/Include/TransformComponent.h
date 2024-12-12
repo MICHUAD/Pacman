@@ -1,14 +1,19 @@
-#pragma once
-
-#include "../include/HeaderLib.h"
+#pragma once 
+#include "Component.h"
 
 namespace MichGF
 {
+
     class CTransformComponent : public CComponent
     {
     public:
         CTransformComponent() :
             m_vPosition(0.0f, 0.0f),
+            m_fRotation(0.0f),
+            m_vScale(1.0f, 1.0f) {}
+
+        CTransformComponent(const sf::Vector2f& vPosition) :
+            m_vPosition(vPosition),
             m_fRotation(0.0f),
             m_vScale(1.0f, 1.0f) {}
 
