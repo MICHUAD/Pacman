@@ -132,7 +132,7 @@
     </Link>
     <Lib>
       <AdditionalLibraryDirectories>C:\Users\ekis_\Documents\GIT\Pacman\SFML-2.6.2-64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib</AdditionalDependencies>
+      <AdditionalDependencies>sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;freetype.lib</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -168,6 +168,7 @@
     <ClInclude Include="Include\Scene.h" />
     <ClInclude Include="Include\Component.h" />
     <ClInclude Include="Include\State.h" />
+    <ClInclude Include="Include\TextComponent.h" />
     <ClInclude Include="Include\TransformComponent.h" />
   </ItemGroup>
   <ItemGroup>
@@ -176,6 +177,7 @@
     <ClCompile Include="Source\GraphicsComponent.cpp" />
     <ClCompile Include="Source\Scene.cpp" />
     <ClCompile Include="Source\Component.cpp" />
+    <ClCompile Include="Source\TextComponent.cpp" />
     <ClCompile Include="Source\TransformComponent.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

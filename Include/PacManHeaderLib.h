@@ -7,5 +7,6 @@
 #include "../GameFramework/Include/Scene.h"
 #include "../GameFramework/Include/TransformComponent.h"
 #include "../GameFramework/Include/GraphicsComponent.h"
-
+#include "../GameFramework/Include/State.h"
+#include "../GameFramework/Include/GameManager.h"
 #endif

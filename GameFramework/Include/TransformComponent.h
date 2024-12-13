@@ -32,6 +32,8 @@ namespace MichGF
         
 
     private:
+
+        std::list<std::shared_ptr<CComponent>> m_lComponents;
         float m_fRotation;       
         sf::Vector2f m_vPosition;
         sf::Vector2f m_vScale; 

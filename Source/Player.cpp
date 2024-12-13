@@ -30,7 +30,14 @@ void CPlayer::vHandleInput()
 
 void CPlayer::vMove(float fDeltaTime)
 {
-    // Movement of the player logic -TODO-
+    // Obtener el componente TransformComponent
+    std::shared_ptr<MichGF::CTransformComponent> pTransform = getComponent<MichGF::CTransformComponent>();
+
+    // Calcular la nueva posición
+    sf::Vector2f newPosition = pTransform->vGetPosition() + m_vDirection * m_fSpeed * fDeltaTime;
+
+    // Actualizar la posición del jugador
+    pTransform->vSetPosition(newPosition);
 }
 CPlayer::~CPlayer()
 {

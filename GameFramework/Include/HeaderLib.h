@@ -11,6 +11,7 @@
 #include "GraphicsComponent.h"
 #include "State.h"
 #include "GameManager.h"
+#include "TextComponent.h"
 
 	
 #endif //HeaderLib

@@ -6,17 +6,24 @@ namespace MichGF
     public:
         static CGameManager& getInstance(); // Método estático para obtener la instancia
 
-        void vRun();
+        std::shared_ptr<CScene> getScene() const { return m_pCurrentScene; }
+        std::shared_ptr<CState> getState() const { return m_pCurrentState; }
 
-    private:
+        void setScene(std::shared_ptr<CScene> pScene) { m_pCurrentScene = pScene; }
+
+        void setState(std::shared_ptr<CState> pState) { m_pCurrentState = pState; }
+
+       virtual void vRun();
+
+    protected:
         CGameManager(); // Constructor privado
         CGameManager(const CGameManager&) = delete; // Evitar copia
         CGameManager& operator=(const CGameManager&) = delete; // Evitar asignación
 
-        void vInit();
-        void vHandleInput();
-        void vUpdate(float fDeltaTime);
-        void vDraw();
+        virtual void vInit();
+        virtual void vHandleInput();
+        virtual void vUpdate(float fDeltaTime);
+        virtual void vDraw();
 
         sf::RenderWindow m_rwWindow; // Ventana del juego
         std::shared_ptr<CScene> m_pCurrentScene; // Escena actual

@@ -1,6 +1,7 @@
 
 #include "../Include/PacManHeaderLib.h"
 #include "../Include/PacmanScene.h"
+#include "../GameFramework/Include/TextComponent.h"
 #include <fstream>
 #include <string>
 
@@ -28,11 +29,11 @@ void CPacmanScene::vLoadMap(const std::string& sFilename)
 
     // Cargar texturas
     sf::Texture txWall, txPoint, txPowerPill, txPacman, txGhost;
-    if (!txWall.loadFromFile("resources/wall.png") ||
-        !txPoint.loadFromFile("resources/point.png") ||
-        !txPowerPill.loadFromFile("resources/power_pill.png") ||
-        !txPacman.loadFromFile("resources/pacman.png") ||
-        !txGhost.loadFromFile("resources/ghost.png"))
+    if (!txWall.loadFromFile("Resources/wall.png") ||
+        !txPoint.loadFromFile("Resources/point.png") ||
+        !txPowerPill.loadFromFile("Resources/power_pill.png") ||
+        !txPacman.loadFromFile("Resources/pacman.png") ||
+        !txGhost.loadFromFile("Resources/ghost.png"))
     {
         // Manejar error de carga de texturas
         return;
@@ -42,6 +43,7 @@ void CPacmanScene::vLoadMap(const std::string& sFilename)
     std::ifstream file(sFilename);
     if (file.is_open())
     {
+
         std::string line;
         int iRow = 0;
         while (std::getline(file, line))
@@ -58,6 +60,7 @@ void CPacmanScene::vLoadMap(const std::string& sFilename)
                     std::shared_ptr<MichGF::CEntity> pWall = std::make_shared<MichGF::CEntity>();
                     pWall->vAddComponent(std::make_shared<MichGF::CTransformComponent>(vPosition));
                     pWall->vAddComponent(std::make_shared<MichGF::CGraphicsComponent>(txWall));
+                    m_lWalls.push_back(pWall->vGetSprite().getGlobalBounds());
                     vAddEntity(pWall);
                     break;
                 }
@@ -66,6 +69,7 @@ void CPacmanScene::vLoadMap(const std::string& sFilename)
                     std::shared_ptr<MichGF::CEntity> pPoint = std::make_shared<MichGF::CEntity>();
                     pPoint->vAddComponent(std::make_shared<MichGF::CTransformComponent>(vPosition));
                     pPoint->vAddComponent(std::make_shared<MichGF::CGraphicsComponent>(txPoint));
+                    m_lPoints.push_back(pPoint);
                     vAddEntity(pPoint);
                     break;
 
@@ -76,6 +80,8 @@ void CPacmanScene::vLoadMap(const std::string& sFilename)
                     std::shared_ptr<MichGF::CEntity> pPowerPill = std::make_shared<MichGF::CEntity>();
                     pPowerPill->vAddComponent(std::make_shared<MichGF::CTransformComponent>(vPosition));
                     pPowerPill->vAddComponent(std::make_shared<MichGF::CGraphicsComponent>(txPowerPill));
+                    m_lPowerPills.push_back(pPowerPill);
+
                     vAddEntity(pPowerPill);
                     break;
                 }
@@ -85,6 +91,17 @@ void CPacmanScene::vLoadMap(const std::string& sFilename)
                     pPlayer->vAddComponent(std::make_shared<MichGF::CTransformComponent>(vPosition));
                     pPlayer->vAddComponent(std::make_shared<MichGF::CGraphicsComponent>(txPacman));
                     vAddEntity(pPlayer);
+                    break;
+                } 
+                case 'B': // Base
+                {
+                    m_vBasePosition = vPosition; // Guardar la posición de la base
+
+                    // Crear una entidad para la base
+                    std::shared_ptr<MichGF::CEntity> pBase = std::make_shared<MichGF::CEntity>();
+                    pBase->vAddComponent(std::make_shared<MichGF::CTransformComponent>(vPosition));
+                    // ... (opcional) Cargar y configurar el sprite de la base ...
+                    vAddEntity(pBase);
                     break;
                 }
                 case '1': // Fantasma 1
@@ -103,5 +120,31 @@ void CPacmanScene::vLoadMap(const std::string& sFilename)
             iRow++;
         }
         file.close();
+    }
+}
+
+void CPacmanScene::vUpdateMap(int iScore, int iLives)
+{
+    // 1. Limpiar la escena actual
+    m_lEntities.clear();
+
+    // 2. Cargar el mapa original
+    vLoadMap("resources/map.txt");
+
+    // 3. Actualizar el puntaje y las vidas (necesitas una forma de acceder a las entidades del jugador y la UI)
+    // ... (Implementar la lógica para actualizar el puntaje y las vidas) ...
+    std::shared_ptr<MichGF::CEntity> pScoreText = getEntity("ScoreText");
+    std::shared_ptr<MichGF::CEntity> pLivesText = getEntity("LivesText");
+
+
+    if (pScoreText != nullptr && pLivesText != nullptr) {
+        // Asumiendo que las entidades tienen un componente CTextComponent
+        std::shared_ptr<MichGF::CTextComponent> pScoreTextComponent = pScoreText->getComponent<MichGF::CTextComponent>();
+        std::shared_ptr<MichGF::CTextComponent> pLivesTextComponent = pLivesText->getComponent<MichGF::CTextComponent>();
+
+        if (pScoreTextComponent != nullptr && pLivesTextComponent != nullptr) {
+            pScoreTextComponent->vSetText("Score: " + std::to_string(iScore));
+            pLivesTextComponent->vSetText("Lives: " + std::to_string(iLives));
+        }
     }
 }

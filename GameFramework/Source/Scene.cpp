@@ -31,4 +31,20 @@ namespace MichGF
             pEntity->vDraw(rwWindow);
         }
     }
+    std::shared_ptr<CEntity> CScene::getEntity(const std::string& sName)
+    {
+        auto it = std::find_if(m_lEntities.begin(), m_lEntities.end(),
+            [&sName](const std::shared_ptr<CEntity>& pEntity) {
+                // Obtener el nombre del componente
+                std::string componentName = pEntity->sGetName();
+                return componentName == sName;
+            });
+
+        if (it != m_lEntities.end()) {
+            return *it;
+        }
+        else {
+            return nullptr;
+        }
+    }
 }

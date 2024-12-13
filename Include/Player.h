@@ -11,7 +11,9 @@ public:
     void vHandleInput();
     void vMove(float fDeltaTime);
 
-private:
+    void vSetDirection(sf::Vector2f vDirection) { m_vDirection = vDirection; }
+
+protected:
     float m_fSpeed;
     sf::Vector2f m_vDirection;
 

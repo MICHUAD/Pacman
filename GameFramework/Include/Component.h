@@ -16,7 +16,11 @@ namespace MichGF
 
         void vSetEntity(CEntity* pEntity) { m_pEntity = pEntity; }
 
+        void vSetName(const std::string& sName) { m_sName = sName; }
+        const std::string& sGetName() const { return m_sName; }
+
     protected:
         CEntity* m_pEntity; //pointer to the entity that it belongs.
+        std::string m_sName; // Nombre del componente
     };
 }

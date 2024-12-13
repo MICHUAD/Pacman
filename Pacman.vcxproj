@@ -144,13 +144,17 @@
   <ItemGroup>
     <ClCompile Include="Pacman.cpp" />
     <ClCompile Include="Source\Ghost.cpp" />
+    <ClCompile Include="Source\PacmanGameManager.cpp" />
     <ClCompile Include="Source\PacmanScene.cpp" />
+    <ClCompile Include="Source\PacmanGameState.cpp" />
     <ClCompile Include="Source\Player.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\Ghost.h" />
+    <ClInclude Include="Include\PacmanGameManager.h" />
     <ClInclude Include="include\PacManHeaderLib.h" />
     <ClInclude Include="Include\PacmanScene.h" />
+    <ClInclude Include="Include\PacmanGameState.h" />
     <ClInclude Include="Include\Player.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
