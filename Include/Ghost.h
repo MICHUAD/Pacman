@@ -14,7 +14,16 @@ public:
 	};
 
 	CGhost();
-	CGhost(sf::Vector2i vStartPosition, sf::Vector2f vStartDirection, float fStartingSpeed, sf::Sprite sprGhostSprite);
+	CGhost(
+		sf::Vector2i vStartPosition, 
+		sf::Vector2f vStartDirection, 
+		float fStartingSpeed, 
+		sf::Sprite sprGhostSprite, 
+		float fRandomTimer, 
+		float fScaredTimer, 
+		CGhost::EGSTATE eCurrentState
+	);
+
 	~CGhost();
 	void vUpdate(float fDeltaTime) override;
 	void vChasePac(const sf::Vector2f& vPlayerPosition, float fDeltaTime);
@@ -31,5 +40,6 @@ private:
 	sf::Vector2f m_vDirection;
 	float m_fRandomTimer;
 	EGSTATE m_eCurrentState;
+	float m_fScaredTimer; // Temporizador para el estado SCARED
 };
 

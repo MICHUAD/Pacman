@@ -1,2 +1,36 @@
-﻿  PacmanGameState.cpp
-  Pacman.vcxproj -> C:\Users\ekis_\Documents\GIT\Pacman\Pacman\x64\Debug\Pacman.exe
+﻿  Pacman.cpp
+  Ghost.cpp
+  PacmanGameManager.cpp
+C:\Users\ekis_\Documents\GIT\Pacman\Pacman\Source\Ghost.cpp(16,9): error C2511: 'CGhost::CGhost(sf::Vector2i,sf::Vector2f,float,sf::Sprite,float,float,CGhost::EGSTATE)': overloaded member function not found in 'CGhost'
+      C:\Users\ekis_\Documents\GIT\Pacman\Pacman\Include\Ghost.h(5,7):
+      see declaration of 'CGhost'
+  
+C:\Users\ekis_\Documents\GIT\Pacman\Pacman\Source\Ghost.cpp(18,5): error C2597: illegal reference to non-static member 'MichGF::CEntity::m_vPosition'
+      C:\Users\ekis_\Documents\GIT\Pacman\Pacman\GameFramework\Include\Entity.h(57,16):
+      see declaration of 'MichGF::CEntity::m_vPosition'
+  
+C:\Users\ekis_\Documents\GIT\Pacman\Pacman\Source\Ghost.cpp(19,5): error C2597: illegal reference to non-static member 'CGhost::m_vDirection'
+      C:\Users\ekis_\Documents\GIT\Pacman\Pacman\Include\Ghost.h(31,15):
+      see declaration of 'CGhost::m_vDirection'
+  
+C:\Users\ekis_\Documents\GIT\Pacman\Pacman\Source\Ghost.cpp(20,5): error C2597: illegal reference to non-static member 'CGhost::m_fSpeed'
+      C:\Users\ekis_\Documents\GIT\Pacman\Pacman\Include\Ghost.h(30,8):
+      see declaration of 'CGhost::m_fSpeed'
+  
+C:\Users\ekis_\Documents\GIT\Pacman\Pacman\Source\Ghost.cpp(21,5): error C2597: illegal reference to non-static member 'MichGF::CEntity::m_sprSprite'
+      C:\Users\ekis_\Documents\GIT\Pacman\Pacman\GameFramework\Include\Entity.h(58,14):
+      see declaration of 'MichGF::CEntity::m_sprSprite'
+  
+C:\Users\ekis_\Documents\GIT\Pacman\Pacman\Source\Ghost.cpp(22,5): error C2597: illegal reference to non-static member 'CGhost::m_fScaredTimer'
+      C:\Users\ekis_\Documents\GIT\Pacman\Pacman\Include\Ghost.h(34,8):
+      see declaration of 'CGhost::m_fScaredTimer'
+  
+C:\Users\ekis_\Documents\GIT\Pacman\Pacman\Source\Ghost.cpp(23,5): error C2597: illegal reference to non-static member 'CGhost::m_fRandomTimer'
+      C:\Users\ekis_\Documents\GIT\Pacman\Pacman\Include\Ghost.h(32,8):
+      see declaration of 'CGhost::m_fRandomTimer'
+  
+C:\Users\ekis_\Documents\GIT\Pacman\Pacman\Source\Ghost.cpp(25,1): error C2059: syntax error: '}'
+  PacmanGameState.cpp
+  PacmanScene.cpp
+  Player.cpp
+  Generating Code...

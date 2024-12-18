@@ -267,7 +267,11 @@
               "RelativeDocumentMoniker": "Include\\Ghost.h",
               "ToolTip": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\Include\\Ghost.h",
               "RelativeToolTip": "Include\\Ghost.h",
+<<<<<<< Updated upstream
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAfAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAZAAAAAAAAAA==",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-12-12T23:04:35.954Z",
               "EditorCaption": ""
@@ -387,9 +391,15 @@
               "Title": "Ghost.cpp",
               "DocumentMoniker": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\Source\\Ghost.cpp",
               "RelativeDocumentMoniker": "Source\\Ghost.cpp",
+<<<<<<< Updated upstream
               "ToolTip": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\Source\\Ghost.cpp",
               "RelativeToolTip": "Source\\Ghost.cpp",
               "ViewState": "AgIAACEAAAAAAAAAAAAAADEAAAA0AAAAAAAAAA==",
+=======
+              "ToolTip": "C:\\Users\\ekis_\\Documents\\GIT\\Pacman\\Pacman\\Source\\Ghost.cpp*",
+              "RelativeToolTip": "Source\\Ghost.cpp*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAWAAAAAAAAAA==",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-11T18:08:21.425Z",
               "EditorCaption": ""

@@ -8,14 +8,26 @@ CGhost::CGhost()
     m_vDirection = sf::Vector2f(0.0f, 0.0f);
     m_vPosition = sf::Vector2i(0, 0);
     m_sprSprite = sf::Sprite();
+    m_fScaredTimer = 0.0f;
+    m_fRandomTimer = 0.0f;
+    m_eCurrentState = EGSTATE::CHASING;
 }
 
-CGhost::CGhost(sf::Vector2i vStartPosition, sf::Vector2f vStartDirection, float fStartingSpeed, sf::Sprite sprGhostSprite)
+CGhost::CGhost(sf::Vector2i vStartPosition,
+    sf::Vector2f vStartDirection,
+    float fStartingSpeed,
+    sf::Sprite sprGhostSprite,
+    float fRandomTimer,
+    float fScaredTimer,
+    CGhost::EGSTATE eCurrentState)
 {
     m_vPosition = vStartPosition;
     m_vDirection = vStartDirection;
     m_fSpeed = fStartingSpeed;
     m_sprSprite = sf::Sprite(sprGhostSprite);
+    m_fScaredTimer = fScaredTimer;
+    m_fRandomTimer = fRandomTimer;
+    m_eCurrentState = eCurrentState;
 }
 
 void CGhost::vUpdate(float fDeltaTime)
