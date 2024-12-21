@@ -13,21 +13,23 @@ namespace MichGF
 
         void setState(std::shared_ptr<CState> pState) { m_pCurrentState = pState; }
 
-       virtual void vRun();
-
-    protected:
-        CGameManager(); // Constructor privado
-        CGameManager(const CGameManager&) = delete; // Evitar copia
-        CGameManager& operator=(const CGameManager&) = delete; // Evitar asignación
-
+        virtual void vRun();
         virtual void vInit();
         virtual void vHandleInput();
         virtual void vUpdate(float fDeltaTime);
         virtual void vDraw();
 
+    protected:
+        CGameManager(); // Constructor 
+        CGameManager(const CGameManager&) = delete; // Evitar copia
+        CGameManager& operator=(const CGameManager&) = delete; // Evitar asignación
+
+
+
         sf::RenderWindow m_rwWindow; // Ventana del juego
         std::shared_ptr<CScene> m_pCurrentScene; // Escena actual
         std::shared_ptr<CState> m_pCurrentState; // Estado actual
         sf::Clock m_cClock; // Reloj para medir el tiempo
+        sf::Font m_fntFont; // Declarar la variable m_fntFont
 	};
 }

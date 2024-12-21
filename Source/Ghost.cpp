@@ -6,25 +6,19 @@ CGhost::CGhost()
 {
     m_fSpeed = 0.0f;
     m_vDirection = sf::Vector2f(0.0f, 0.0f);
-    m_vPosition = sf::Vector2i(0, 0);
-    m_sprSprite = sf::Sprite();
     m_fScaredTimer = 0.0f;
     m_fRandomTimer = 0.0f;
     m_eCurrentState = EGSTATE::CHASING;
 }
 
-CGhost::CGhost(sf::Vector2i vStartPosition,
-    sf::Vector2f vStartDirection,
+CGhost::CGhost(sf::Vector2f vStartDirection,
     float fStartingSpeed,
-    sf::Sprite sprGhostSprite,
     float fRandomTimer,
     float fScaredTimer,
     CGhost::EGSTATE eCurrentState)
 {
-    m_vPosition = vStartPosition;
     m_vDirection = vStartDirection;
     m_fSpeed = fStartingSpeed;
-    m_sprSprite = sf::Sprite(sprGhostSprite);
     m_fScaredTimer = fScaredTimer;
     m_fRandomTimer = fRandomTimer;
     m_eCurrentState = eCurrentState;
@@ -47,6 +41,13 @@ void CGhost::vUpdate(float fDeltaTime)
                 vChasePac(playerPosition, fDeltaTime);
                 break;
             case EGSTATE::SCARED:
+                if (m_fScaredTimer > 0.0f) {
+                    m_fScaredTimer -= fDeltaTime;
+                }
+                else {
+                    // El temporizador ha llegado a 0, cambiar el estado del fantasma
+                    m_eCurrentState = EGSTATE::CHASING;
+                }
                 vScared(playerPosition, fDeltaTime);
                 break;
             case EGSTATE::SCATTER:
@@ -139,6 +140,11 @@ void CGhost::vScatter(const sf::Vector2f& vPlayerPosition, float fDeltaTime)
 {
 }
 
+void CGhost::vSetScaredTimer(float fScaredTimer)
+{
+    m_fScaredTimer = fScaredTimer;
+}
+
 void CGhost::vMove(float fDeltaTime)
 {
     // Obtener el componente TransformComponent
@@ -185,6 +191,27 @@ void CGhost::vMove(float fDeltaTime)
     }
 }
 
+void CGhost::vDraw(sf::RenderWindow & rwWindow)
+{
+    // Obtener el componente GraphicsComponent
+    std::shared_ptr<MichGF::CGraphicsComponent> pGraphics = getComponent<MichGF::CGraphicsComponent>();
+    if (pGraphics != nullptr)
+    {
+        // Obtener el sprite del fantasma
+        sf::Sprite ghostSprite = pGraphics->vGetSprite();
+
+        // Obtener el componente TransformComponent para la posición
+        std::shared_ptr<MichGF::CTransformComponent> pTransform = getComponent<MichGF::CTransformComponent>();
+        if (pTransform != nullptr)
+        {
+            // Establecer la posición del sprite
+            ghostSprite.setPosition(pTransform->vGetPosition());
+        }
+
+        // Dibujar el sprite en la ventana
+        rwWindow.draw(ghostSprite);
+    }
+}
 
 CGhost::~CGhost()
 {

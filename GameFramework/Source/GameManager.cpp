@@ -1,4 +1,5 @@
 #include "../include/HeaderLib.h"
+#include "../Include/GameManager.h"
 
 namespace MichGF
 {
@@ -18,6 +19,14 @@ namespace MichGF
 
     void CGameManager::vInit()
     {
+        // 1. Crear la ventana del juego
+        m_rwWindow.create(sf::VideoMode(800, 600), "Pacman");
+
+        // 2. Cargar la fuente
+        if (!m_fntFont.loadFromFile("resources/Blox2.ttf")) {
+            // Manejar el error de carga de la fuente
+            // ...
+        }
     }
 
     void CGameManager::vHandleInput()

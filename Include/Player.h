@@ -5,7 +5,7 @@ class CPlayer : public MichGF::CEntity
 {
 public:
     CPlayer();
-    CPlayer(sf::Vector2i vStartPosition, sf::Vector2f vStartDirection, float fStartingSpeed, sf::Sprite sprPlayerSprite);
+    CPlayer( sf::Vector2f vStartDirection, float fStartingSpeed);
     ~CPlayer();
     void vUpdate(float fDeltaTime) override;
     void vHandleInput();

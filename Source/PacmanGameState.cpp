@@ -28,7 +28,7 @@ void CPacmanGameState::vInit()
 void CPacmanGameState::vHandleInput()
 {
     // Obtener la instancia del jugador de la escena
-    std::shared_ptr<CPlayer> pPlayer = m_pGameManager->getScene()->getEntity<CPlayer>(); // Asumiendo que tienes un método getEntity() en CScene
+    std::shared_ptr<CPlayer> pPlayer = m_pGameManager->getScene()->getEntity<CPlayer>();
 
     // Mover al jugador con las flechas del teclado
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
@@ -47,6 +47,11 @@ void CPacmanGameState::vHandleInput()
     {
         pPlayer->vSetDirection(sf::Vector2f(0.0f, 1.0f)); // Abajo
     }
+    else
+    {
+        // Si no se presiona ninguna tecla de dirección, detener al jugador
+        pPlayer->vSetDirection(sf::Vector2f(0.0f, 0.0f));
+    }
 }
 
 void CPacmanGameState::vUpdate(float fDeltaTime)
@@ -62,6 +67,9 @@ void CPacmanGameState::vUpdate(float fDeltaTime)
 }
 void CPacmanGameState::checkCollisions()
 {
+	//los sprites del juego por alguna razon se borran los punteros aqui pero en handle input no se borran
+    // MATENME
+    // 
     // Obtener la instancia del jugador de la escena
     std::shared_ptr<CPlayer> pPlayer = m_pGameManager->getScene()->getEntity<CPlayer>();
 
@@ -148,6 +156,7 @@ void CPacmanGameState::checkCollisions()
             // Activar el estado de vulnerabilidad de los fantasmas
             for (const auto& pGhost : ghosts) {
                 pGhost->vSetCurrentState(CGhost::EGSTATE::SCARED);
+                pGhost->vSetScaredTimer(5.0f); // Establecer el temporizador a 5 segundos (ajustar el valor según sea necesario)
                 // ... (Opcional: Cambiar el sprite del fantasma, reproducir un sonido) ...
             }
 
@@ -162,5 +171,5 @@ void CPacmanGameState::checkCollisions()
 void CPacmanGameState::vDraw(sf::RenderWindow& rwWindow)
 {
     // Aquí se dibujan elementos específicos del estado de juego, si es necesario.
-    // ... (Por ahora, no necesitamos dibujar nada adicional aquí) ...
+    m_pGameManager->getScene()->vDraw(rwWindow);
 }

@@ -4,17 +4,13 @@ CPlayer::CPlayer()
 {
     m_fSpeed = 0.0f;
     m_vDirection = sf::Vector2f(0.0f, 0.0f);
-    m_vPosition = sf::Vector2i(0, 0);
-    m_sprSprite = sf::Sprite();
 
 }
 
-CPlayer::CPlayer(sf::Vector2i vStartPosition, sf::Vector2f vStartDirection, float fStartingSpeed, sf::Sprite sprPlayerSprite)
+CPlayer::CPlayer( sf::Vector2f vStartDirection, float fStartingSpeed)
 {
-    m_vPosition = vStartPosition;
     m_vDirection = vStartDirection;
     m_fSpeed = fStartingSpeed;
-    m_sprSprite = sf::Sprite(sprPlayerSprite);
 }
 
 void CPlayer::vUpdate(float fDeltaTime)

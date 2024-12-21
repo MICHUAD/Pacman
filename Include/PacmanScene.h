@@ -10,7 +10,8 @@ public:
     CPacmanScene();
     void vLoadMap(const std::string& sFilename); // Método para cargar el mapa
     void vUpdateMap(int iScore, int iLives);
-    sf::Vector2f vGetBasePos() { return m_vBasePosition; }
+    void vDraw(sf::RenderWindow& rwWindow);
+    sf::Vector2f vGetBasePos() const { return m_vBasePosition; }
 
     std::list<sf::FloatRect> getWalls() const { return m_lWalls; }
     std::list<std::shared_ptr<MichGF::CEntity>> getPoints() const { return m_lPoints; }

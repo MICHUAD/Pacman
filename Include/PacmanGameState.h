@@ -18,5 +18,6 @@ private:
     int m_iScore;
     int m_iLives;
     bool m_bGameOver;
+    std::shared_ptr<CPlayer> m_pCurrentPlayer;
 };
 

@@ -15,10 +15,8 @@ public:
 
 	CGhost();
 	CGhost(
-		sf::Vector2i vStartPosition, 
 		sf::Vector2f vStartDirection, 
 		float fStartingSpeed, 
-		sf::Sprite sprGhostSprite, 
 		float fRandomTimer, 
 		float fScaredTimer, 
 		CGhost::EGSTATE eCurrentState
@@ -29,10 +27,14 @@ public:
 	void vChasePac(const sf::Vector2f& vPlayerPosition, float fDeltaTime);
 	void vScared(const sf::Vector2f& vPlayerPosition, float fDeltaTime);
 	void vMove(float fDeltaTime);
+	void vDraw(sf::RenderWindow& rwWindow);
+
+
 	sf::Vector2f normalize(const sf::Vector2f& v);
 	void vReturnToBase(const sf::Vector2f& vPlayerPosition, float fDeltaTime);
 	void vScatter(const sf::Vector2f& vPlayerPosition, float fDeltaTime);
-	EGSTATE eGetCurrentState() { return m_eCurrentState; }
+	void vSetScaredTimer(float fScaredTimer);
+	EGSTATE eGetCurrentState()const { return m_eCurrentState; }
 	void vSetCurrentState(EGSTATE eNewState) { m_eCurrentState = eNewState; }
 
 private:
