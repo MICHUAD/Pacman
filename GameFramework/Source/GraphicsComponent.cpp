@@ -11,18 +11,25 @@ namespace MichGF
 
     CGraphicsComponent::CGraphicsComponent(const sf::Texture& txTexture)
     {
-        m_sprSprite.setTexture(txTexture);
+        m_CurrTexture = txTexture;
+        m_sprSprite.setTexture(m_CurrTexture);
+    }
+
+    void CGraphicsComponent::vUpdate(float fDeltaTime)
+    {
+		m_sprSprite.setPosition(m_pEntity->getComponent<CTransformComponent>()->vGetPosition());
     }
 
 
     void CGraphicsComponent::vDraw(sf::RenderWindow& rwWindow)
     {
+        /*
         // Obtener la entidad a la que pertenece este componente
         MichGF::CEntity* pEntity = m_pEntity->getEntity();
         
         if (pEntity != nullptr) {
             // Obtener el sprite de la entidad
-            sf::Sprite entitySprite = pEntity->vGetSprite();
+            const sf::Sprite& entitySprite = pEntity->vGetSprite();
             
             // Actualizar la textura del sprite (si es necesario)
             // entitySprite.setTexture(m_txTexture);
@@ -36,6 +43,8 @@ namespace MichGF
 
             // Dibujar el sprite en la ventana
             rwWindow.draw(entitySprite);
-        }
+            */
+
+        rwWindow.draw(m_sprSprite);
     }
 }

@@ -4,12 +4,13 @@
 class CPacmanGameManager : public MichGF::CGameManager
 {
 public:
-
+    /*
     enum class GAMESTATE {
         TITLE,
         GAME,
         GAMEOVER
     };
+    */
 
 
     // ... (Podemos añadir métodos específicos de Pacman aquí si es necesario) ...
@@ -24,6 +25,6 @@ public:
 
 protected:
 
-    GAMESTATE m_eCurrentGameState;
+   // GAMESTATE m_eCurrentGameState;
     // ... (Podemos añadir más métodos privados si es necesario) ...
 };

@@ -24,7 +24,7 @@ namespace MichGF // Mich Game Framework, creating a namespace to avoid any libra
 
 		//geters get it? xD, return a constant not modificable data, I learn that using it increases the security in the code, avoiding miss rewrites to the attributes
 		sf::Vector2f	vGetPosition();
-		sf::Sprite		vGetSprite();
+		const sf::Sprite&		vGetSprite();
 		const std::string& sGetName() const { return m_sName; }
 
 		std::shared_ptr<CEntity> getEntity(const std::string& sName, CScene sScene);

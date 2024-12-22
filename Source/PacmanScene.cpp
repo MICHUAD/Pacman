@@ -107,7 +107,9 @@ void CPacmanScene::vLoadMap(const std::string& sFilename)
                     pPlayer->vAddComponent(std::make_shared<MichGF::CTransformComponent>(vPosition));
                     pPlayer->vAddComponent(std::make_shared<MichGF::CGraphicsComponent>(txPacman));
 					pPlayer->VAddGraphicsComponent(std::make_shared<MichGF::CGraphicsComponent>(txPacman));
+                    
                     vAddEntity(pPlayer);
+
                     break;
                 } /*
                 case 'B': // Base

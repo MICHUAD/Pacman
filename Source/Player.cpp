@@ -15,8 +15,10 @@ CPlayer::CPlayer( sf::Vector2f vStartDirection, float fStartingSpeed)
 
 void CPlayer::vUpdate(float fDeltaTime)
 {
+    
     vHandleInput();
     vMove(fDeltaTime);
+    this->m_pGraphicsComponent->vUpdate(fDeltaTime);
 }
 
 void CPlayer::vHandleInput()

@@ -13,16 +13,17 @@ namespace MichGF
 		}
 		return vCurrPosition;
 	}
-	sf::Sprite CEntity::vGetSprite()
+	const sf::Sprite& CEntity::vGetSprite()
 	{
 		sf::Sprite sSpriteFromGC;
 		for (const auto& component : m_lComponents) {
 			if (std::dynamic_pointer_cast<MichGF::CGraphicsComponent>(component) != nullptr) {
-				sSpriteFromGC = std::dynamic_pointer_cast<MichGF::CGraphicsComponent>(component)->vGetSprite();
+				return std::dynamic_pointer_cast<MichGF::CGraphicsComponent>(component)->vGetSprite();
 			}
 		}
 		return sSpriteFromGC;
 	}
+
 	void CEntity::vSetPosition(int fPosX, int fPosY)
 	{
 		sf::Vector2f vCurrPosition;
@@ -32,6 +33,8 @@ namespace MichGF
 			}
 		}
 	}
+
+
 	void CEntity::vSetSprite( const sf::Sprite& sprSprite)
 	{
 		sf::Sprite sSpriteFromGC;
@@ -55,16 +58,16 @@ namespace MichGF
 	}
 	void CEntity::vDraw(sf::RenderWindow& rwWindow)
 	{
-		m_pGraphicsComponent->vDraw(rwWindow);/*
+	
 		for (const auto& component : m_lComponents) {
 			if (std::dynamic_pointer_cast<MichGF::CGraphicsComponent>(component) != nullptr) {
 				std::dynamic_pointer_cast<MichGF::CGraphicsComponent>(component)->vDraw(rwWindow);
 			}
-		}*/
+		}
 	}
 	void CEntity::vAddComponent(std::shared_ptr<CComponent> pComponent)
 	{
-		pComponent->vSetEntity(this);
+		pComponent->vSetEntity(this->getEntity());
 		m_lComponents.push_back(pComponent);
 	}
 }

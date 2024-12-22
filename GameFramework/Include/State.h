@@ -11,7 +11,8 @@ namespace MichGF
         virtual ~CState() {}
 
         virtual void vInit() {} // initial gamestate
-        virtual void vHandleInput() {} 
+        virtual void vHandleInput() {};
+        virtual void checkCollisions() {};
         virtual void vUpdate(float fDeltaTime) {} 
         virtual void vDraw(sf::RenderWindow& rwWindow) {} 
 

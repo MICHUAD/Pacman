@@ -9,7 +9,7 @@ void CPacmanGameManager::vInit()
 {
     // 1. Crear una instancia del estado de juego de Pacman
     std::shared_ptr<CPacmanGameState> pGameState = std::make_shared<CPacmanGameState>(this);
-    m_eCurrentGameState = GAMESTATE::GAME;
+    //m_eCurrentGameState = GAMESTATE::GAME;
 
     // 2. Inicializar el estado de juego
     pGameState->vInit();

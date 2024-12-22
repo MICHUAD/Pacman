@@ -31,6 +31,7 @@ namespace MichGF
             pEntity->vDraw(rwWindow);
         }
     }
+
     std::shared_ptr<CEntity> CScene::getEntity(const std::string& sName)
     {
         auto it = std::find_if(m_lEntities.begin(), m_lEntities.end(),
